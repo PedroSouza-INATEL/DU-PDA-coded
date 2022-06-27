@@ -17,18 +17,9 @@ class MonteCarlo():
         symb_idx = np.random.randint(M, size=[self.mc_runs, self.n_tx])
 
         # Initialize complex Gaussian channel coefficients (Rayleigh fading)
-        # TODO: divide by N_RX to normilize to HTH = I?
         H = (1 / mt.sqrt(2 * self.n_rx)) * (np.random.randn(self.mc_runs, self.n_rx, self.n_tx) +
                                             1j * np.random.randn(self.mc_runs, self.n_rx, self.n_tx))
 
-        # ro = 0.99
-        # ro = np.sqrt(1 - (1 + (1 / std[:, np.newaxis, np.newaxis]**2))**(-1))
-        # Eps = (1 / mt.sqrt(2 * self.n_rx)) * (np.random.randn(self.mc_runs, self.n_rx, self.n_tx) +
-        #                           1j * np.random.randn(self.mc_runs, self.n_rx, self.n_tx))
-        
-        # H_hat = ro * H + np.sqrt(1 - ro**2) * Eps
-
-        
         # Initialize complex AWG noise at the receiver
         noise = (std[:, np.newaxis] / mt.sqrt(2)) * (np.random.randn(self.mc_runs, self.n_rx) +
                                                       1j * np.random.randn(self.mc_runs, self.n_rx))
