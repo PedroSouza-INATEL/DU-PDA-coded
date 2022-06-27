@@ -27,7 +27,6 @@ class MonteCarlo_coded():
             (np.random.randn(self.mc_runs, self.n_rx, self.n_tx) +
              1j * np.random.randn(self.mc_runs, self.n_rx, self.n_tx))
 
-        
         # Initialize complex AWG noise at the receiver
         noise = (std[:, np.newaxis] / mt.sqrt(2)) * \
             (np.random.randn(self.mc_runs, self.n_rx, self.n_symb) +
