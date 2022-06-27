@@ -22,7 +22,6 @@ class MonteCarlo_coded():
                     mt.sqrt(3 / (2 * (M - 1)))
 
         # Initialize complex Gaussian channel coefficients (Rayleigh fading)
-        # TODO: divide by N_RX to normilize to HTH = I?
         H = (1 / mt.sqrt(2 * self.n_rx)) * \
             (np.random.randn(self.mc_runs, self.n_rx, self.n_tx) +
              1j * np.random.randn(self.mc_runs, self.n_rx, self.n_tx))
