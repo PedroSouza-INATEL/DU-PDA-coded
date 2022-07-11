@@ -305,7 +305,7 @@ for j in range(N_POINTS):
     # Clear cumulative error counter
     ERR = 0
     MC_RUNS = 0
-    while ERR < 10**3:
+    while ERR < 10**4:
         # Simulate the MIMO transmission of M-QAM symbols over NtNr slow-flat
         # Rayleigh channels and contaminate the received signal with AWGN
         rx_signal, mess, ch_coef = params.signal_process(encoder, modulator, M, std)
