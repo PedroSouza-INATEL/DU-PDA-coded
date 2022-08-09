@@ -1,6 +1,6 @@
 # DU-PDA-coded
 Code for the Deep Unfolded Probability Association Detector (DU-PDA) implementation with polar encoding/decoding. This code may be used for reproducing the numerical results seen in:
 
-'Pedro Henrique Carneiro Souza, Luciano Leonel Mendes. Low-complexity Deep Unfolded Neural Network Receiver for MIMO Systems Based on the Probability Data Association Detector, 24 March 2022, PREPRINT (Version 1) available at Research [https://doi.org/10.21203/rs.3.rs-1439479/v1]'
+Souza, P.H.C.d., Mendes, L.L. Low-complexity deep unfolded neural network receiver for MIMO systems based on the probability data association detector. J Wireless Com Network 2022, 69 (2022). https://doi.org/10.1186/s13638-022-02152-0
 
 Attention! Both 'signal_processing_mimo_iid_coded.py' and 'signal_processing_mimo_iid_v2.py' are needed by the main script 'DU_PDA_coded.py'.
