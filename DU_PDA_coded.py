@@ -2,20 +2,11 @@
 
     Notes
     -----
-    Please, refer to [R1] for all citations made in this code, namely of
-    sections, equations, and so forth.
-
-    Reference
-    ----------
-
-    .. [R1] Pedro Henrique Carneiro Souza, Luciano Leonel Mendes. Low-complexity
-            Deep Unfolded Neural Network Receiver for MIMO Systems Based on the
-            Probability Data Association Detector, 24 March 2022, PREPRINT
-            (Version 1) available at Research Square
-            [https://doi.org/10.21203/rs.3.rs-1439479/v1]
+    Please, refer to the reference cited in 'README.md' for all citations 
+    made in this code, namely of sections, equations, and so forth.
 
     Created on Fri May 28/2021
-    Last rev. on Wed Jun 22
+    Last rev. on Mon Aug 09/2022
     © 2022 Pedro H. C. de Souza
 """
 import math as mt
